@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Site  Starter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Your Site</h1>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Simple, fast, and responsive</h2>
+        <p>A minimal static site scaffolded for you  ready to customize and deploy.</p>
+        <a class="btn" href="#contact">Get Started</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h3>Features</h3>
+      <div class="grid">
+        <article>
+          <h4>Modern layout</h4>
+          <p>Responsive design with a small CSS footprint.</p>
+        </article>
+        <article>
+          <h4>Lightweight</h4>
+          <p>Minimal JavaScript; easy to maintain.</p>
+        </article>
+        <article>
+          <h4>Easy deploy</h4>
+          <p>Works with GitHub Pages, Netlify, and others.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About</h3>
+      <p>This is a starter template you can extend. Replace text, add images and pages as needed.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <label for="name" class="visually-hidden">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email" class="visually-hidden">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message" class="visually-hidden">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <div id="formStatus" aria-live="polite" class="form-status"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"> 2025 Your Name</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
