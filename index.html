@@ -3,73 +3,179 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Your Site  Starter</title>
+  <meta name="description" content="Walter's portfolio - Developer, creator, and innovator">
+  <meta name="theme-color" content="#007bff">
+  <title>Walter - Developer & Creator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title">Your Site</h1>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-content">
+        <h1 class="site-title">Walter</h1>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <h2>Simple, fast, and responsive</h2>
-        <p>A minimal static site scaffolded for you  ready to customize and deploy.</p>
-        <a class="btn" href="#contact">Get Started</a>
-      </div>
-    </section>
-
-    <section id="features" class="features container">
-      <h3>Features</h3>
-      <div class="grid">
-        <article>
-          <h4>Modern layout</h4>
-          <p>Responsive design with a small CSS footprint.</p>
-        </article>
-        <article>
-          <h4>Lightweight</h4>
-          <p>Minimal JavaScript; easy to maintain.</p>
-        </article>
-        <article>
-          <h4>Easy deploy</h4>
-          <p>Works with GitHub Pages, Netlify, and others.</p>
-        </article>
+        <div class="hero-content">
+          <h2>Hi, I'm Walter</h2>
+          <p>A passionate developer building web applications, games, and tools. Specialized in Python, web technologies, and innovative solutions.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">View My Work</a>
+            <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="about" class="about container">
-      <h3>About</h3>
-      <p>This is a starter template you can extend. Replace text, add images and pages as needed.</p>
+      <div class="section-header">
+        <h3>About Me</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <p>I'm a full-stack developer with experience in creating engaging web experiences and practical applications. My passion lies in turning ideas into reality through clean code and creative problem-solving.</p>
+        <p>When I'm not coding, you can find me gaming, exploring new technologies, or building side projects. I'm always eager to learn and collaborate on exciting challenges.</p>
+        <div class="highlights">
+          <div class="highlight">
+            <span class="number">3+</span>
+            <span class="label">Projects</span>
+          </div>
+          <div class="highlight">
+            <span class="number">∞</span>
+            <span class="label">Learning</span>
+          </div>
+          <div class="highlight">
+            <span class="number">100%</span>
+            <span class="label">Passion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <div class="section-header">
+        <h3>Skills & Tools</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>React Native</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Backend</h4>
+          <ul>
+            <li>Python</li>
+            <li>REST APIs</li>
+            <li>Database Design</li>
+            <li>CLI Tools</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Tools & Platforms</h4>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Expo</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <div class="section-header">
+        <h3>Featured Projects</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">🎮</div>
+          <h4>Snake Game</h4>
+          <p>A classic snake game built with Python & Tkinter. Features multiple levels, sound effects, and persistent high-score tracking.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>Games</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-header">📱</div>
+          <h4>Church Registration App</h4>
+          <p>Cross-platform mobile app built with React Native & Expo. Enables efficient member registration and leadership management.</p>
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>Mobile</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-header">🎵</div>
+          <h4>MFCC Audio Processor</h4>
+          <p>Audio feature extraction tool using Librosa. Extracts Mel-frequency cepstral coefficients from audio files for ML applications.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Audio</span>
+            <span>ML</span>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="contact" class="contact container">
-      <h3>Contact</h3>
-      <form id="contactForm">
-        <label for="name" class="visually-hidden">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
-
-        <label for="email" class="visually-hidden">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-        <label for="message" class="visually-hidden">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-      <div id="formStatus" aria-live="polite" class="form-status"></div>
+      <div class="section-header">
+        <h3>Get in Touch</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-content">
+        <p>Have a question or want to collaborate? Feel free to reach out!</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div id="formStatus" aria-live="polite" class="form-status"></div>
+        <div class="social-links">
+          <p>Connect with me:</p>
+          <div class="links">
+            <a href="https://github.com/walteropp" target="_blank" title="GitHub">GitHub</a>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container"> 2025 Your Name</div>
+    <div class="container">
+      <p>&copy; 2025 Walter. Built with passion and deployed on GitHub Pages.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
