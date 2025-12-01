@@ -1,30 +1,59 @@
-﻿# Starter Static Site
+﻿# MFCC Audio Processor
 
-This directory contains a minimal static site scaffold you can customize.
+**Professional Mel-frequency cepstral coefficient extraction tool for audio analysis and machine learning applications.**
 
-Files:
-- `index.html`  main page
-- `styles.css`  styles
-- `script.js`  small JS helper (contact form simulation)
+A command-line utility built with Python & Librosa for extracting meaningful audio features. Perfect for speech recognition, music analysis, and acoustic signal processing.
 
-Preview locally
+## Quick Start
 
-PowerShell (recommended):
+### Local Preview
 ```powershell
 cd "C:\projecto uno\site"
-python -m http.server 8000
-# then open http://localhost:8000 in your browser
+python -m http.server 9999
+# Open http://localhost:9999 in your browser
 ```
 
-If you have VS Code, install the Live Server extension and open the folder, then click "Go Live".
+### Usage
+```bash
+python "C:\projecto uno\applicaiton MFCC.py" --input audio.wav --sr 22050 --n_mfcc 13
+```
 
-Deploy
+## Features
 
-- GitHub Pages: push this repo to GitHub and enable Pages from the `site/` branch or `gh-pages`.
-- Netlify: drag-and-drop the `site` folder, or connect the repo and set the publish directory to `site`.
+- 🎵 **Multiple Audio Formats**: WAV, MP3, FLAC, OGG support
+- ⚡ **Fast Processing**: Optimized NumPy-based feature extraction
+- 🔧 **Customizable**: Adjust sample rate, coefficient count, and more
+- 💾 **ML-Ready**: Results saved in NumPy .npy format
+- 📊 **Compatible**: Works with TensorFlow, PyTorch, scikit-learn
 
-Next steps (suggestions):
-- Replace content and branding
-- Add images in an `assets/` folder
-- Add contact backend (Formspree, Netlify Forms, or custom API)
-- Migrate to a generator (Vite + React or Hugo) for larger projects
+## Technology
+
+- **Librosa**: Audio analysis library
+- **NumPy**: Numerical computing
+- **SoundFile**: Audio I/O
+- **Python 3.9+**: Core language
+
+## Deployment
+
+- **Live**: https://walteropp.github.io/My-first-site-/
+- **Repository**: https://github.com/walteropp/My-first-site-
+- **Platform**: GitHub Pages
+
+## Use Cases
+
+- Speech recognition preprocessing
+- Music genre classification
+- Environmental sound analysis
+- Acoustic feature extraction for ML models
+- Audio quality assessment
+
+## Installation
+
+Requires Python 3.9+. Install dependencies:
+```bash
+pip install librosa numpy soundfile
+```
+
+## License
+
+MIT License - Feel free to use and modify!
