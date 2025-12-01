@@ -3,178 +3,171 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="MFCC Audio Processor - Professional Mel-frequency cepstral coefficient extraction tool">
-  <meta name="theme-color" content="#007bff">
-  <title>MFCC Audio Processor | Audio Feature Extraction</title>
+  <meta name="description" content="MFCC Audio Processor - Professional Audio Feature Extraction Tool">
+  <meta name="theme-color" content="#4a7ba7">
+  <title>MFCC Audio Processor | Audio Analysis Tool</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
-    <div class="container">
-      <div class="header-content">
-        <h1 class="site-title">MFCC Processor</h1>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#skills">Tech Stack</a>
-          <a href="#projects">Features</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">🎵</div>
+            <div class="org-info">
+              <h1 class="site-title">MFCC Audio Processor</h1>
+              <p class="site-subtitle">Professional Audio Feature Extraction</p>
+            </div>
+          </div>
+          <div class="login-btn">
+            <button class="btn-login">📥 Download</button>
+          </div>
+        </div>
       </div>
     </div>
+    
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <div class="container">
+        <ul class="nav-menu">
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#about">ACERCA DE</a></li>
+          <li><a href="#features">CARACTERÍSTICAS</a></li>
+          <li><a href="#guide">GUÍA</a></li>
+          <li><a href="#tech">TECNOLOGÍA</a></li>
+          <li><a href="#contact">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h2>MFCC Audio Processor</h2>
-          <p>Professional Mel-frequency cepstral coefficient extraction tool. Built with Python & Librosa for machine learning and audio analysis applications.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#features">Learn More</a>
-            <a class="btn btn-secondary" href="#contact">Get Started</a>
-          </div>
-        </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%234a7ba7' width='400' height='300'/%3E%3Ctext x='200' y='150' font-size='72' fill='%23fff' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🎵%3C/text%3E%3C/svg%3E" alt="MFCC Audio">
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about container">
       <div class="section-header">
-        <h3>About MFCC Tool</h3>
-        <div class="underline"></div>
+        <h2>Acerca de MFCC Processor</h2>
       </div>
-      <div class="about-content">
-        <p>The MFCC Audio Processor is a powerful command-line tool designed for extracting Mel-frequency cepstral coefficients from audio files. Perfect for machine learning pipelines, audio analysis, and signal processing applications.</p>
-        <p>Extract meaningful features from audio data with ease. Process multiple audio formats and save results in optimized NumPy format for seamless integration with your ML models and analysis workflows.</p>
-        <div class="highlights">
-          <div class="highlight">
-            <span class="number">13</span>
-            <span class="label">MFCC Coefficients</span>
+      <p class="intro-text">
+        MFCC Audio Processor es una herramienta profesional de extracción de características de audio. 
+        Diseñada para procesamiento de señales de audio, análisis de habla, y aplicaciones de aprendizaje automático.
+      </p>
+    </section>
+
+    <!-- Features Cards -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">¿Por qué elegir MFCC Processor?</h2>
+        <div class="cards-grid">
+          <div class="feature-card">
+            <h3>Flexible Input</h3>
+            <p>Soporta múltiples formatos de audio (WAV, MP3, FLAC, OGG). Parámetros ajustables para análisis personalizado.</p>
+            <a href="#" class="card-link">Más información →</a>
           </div>
-          <div class="highlight">
-            <span class="number">22.05K</span>
-            <span class="label">Sample Rate Hz</span>
+          <div class="feature-card">
+            <h3>Rápido y Eficiente</h3>
+            <p>Procesamiento optimizado. Extrae características MFCC en segundos de archivos de audio grandes.</p>
+            <a href="#" class="card-link">Más información →</a>
           </div>
-          <div class="highlight">
-            <span class="number">100%</span>
-            <span class="label">Python</span>
+          <div class="feature-card">
+            <h3>Integración Fácil</h3>
+            <p>Resultados en formato NumPy .npy. Compatible con TensorFlow, PyTorch y scikit-learn.</p>
+            <a href="#" class="card-link">Más información →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="skills container">
-      <div class="section-header">
-        <h3>Technology Stack</h3>
-        <div class="underline"></div>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h4>Audio Libraries</h4>
+    <!-- Guide Section -->
+    <section id="guide" class="guide">
+      <div class="container">
+        <h2 class="section-title">Guía de Uso</h2>
+        <div class="guide-content">
+          <h3>Instalación</h3>
+          <pre><code>pip install librosa numpy soundfile</code></pre>
+          
+          <h3>Uso Básico</h3>
+          <pre><code>python applicaiton\ MFCC.py --input audio.wav --sr 22050 --n_mfcc 13</code></pre>
+          
+          <h3>Parámetros</h3>
           <ul>
-            <li>Librosa</li>
-            <li>SoundFile</li>
-            <li>NumPy</li>
-            <li>SciPy</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h4>Features Extracted</h4>
-          <ul>
-            <li>MFCC (13-40 coefficients)</li>
-            <li>Spectral Features</li>
-            <li>Temporal Features</li>
-            <li>Energy Analysis</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h4>Supported Formats</h4>
-          <ul>
-            <li>.wav (WAV)</li>
-            <li>.mp3 (MPEG)</li>
-            <li>.flac (FLAC)</li>
-            <li>.ogg (Ogg Vorbis)</li>
+            <li><strong>--input</strong>: Archivo de audio a procesar</li>
+            <li><strong>--sr</strong>: Tasa de muestreo (por defecto: 22050 Hz)</li>
+            <li><strong>--n_mfcc</strong>: Número de coeficientes MFCC (por defecto: 13)</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects container">
-      <div class="section-header">
-        <h3>Key Features</h3>
-        <div class="underline"></div>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-header">🎯</div>
-          <h4>Flexible Input</h4>
-          <p>Works with multiple audio formats (WAV, MP3, FLAC, OGG). Adjustable sample rate and coefficient count for custom analysis needs.</p>
-          <div class="project-tags">
-            <span>Librosa</span>
-            <span>Multi-format</span>
-            <span>Flexible</span>
+    <!-- Technology Stack -->
+    <section id="tech" class="tech">
+      <div class="container">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <h4>Librerías de Audio</h4>
+            <ul>
+              <li>Librosa</li>
+              <li>SoundFile</li>
+              <li>NumPy</li>
+              <li>SciPy</li>
+            </ul>
           </div>
-        </article>
-        <article class="project-card">
-          <div class="project-header">⚡</div>
-          <h4>Fast Processing</h4>
-          <p>Optimized for speed and efficiency. Extract MFCC features in seconds from large audio files. Handles batch processing seamlessly.</p>
-          <div class="project-tags">
-            <span>NumPy</span>
-            <span>Optimized</span>
-            <span>Batch</span>
+          <div class="tech-card">
+            <h4>Formatos Soportados</h4>
+            <ul>
+              <li>WAV (.wav)</li>
+              <li>MP3 (.mp3)</li>
+              <li>FLAC (.flac)</li>
+              <li>OGG Vorbis (.ogg)</li>
+            </ul>
           </div>
-        </article>
-        <article class="project-card">
-          <div class="project-header">💾</div>
-          <h4>Easy Integration</h4>
-          <p>Results saved in NumPy .npy format for direct integration with ML frameworks. Compatible with TensorFlow, PyTorch, and scikit-learn.</p>
-          <div class="project-tags">
-            <span>NumPy</span>
-            <span>ML-Ready</span>
-            <span>Python</span>
+          <div class="tech-card">
+            <h4>Características Extraídas</h4>
+            <ul>
+              <li>MFCC (13-40 coeficientes)</li>
+              <li>Características Espectrales</li>
+              <li>Características Temporales</li>
+              <li>Análisis de Energía</li>
+            </ul>
           </div>
-        </article>
+        </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact container">
-      <div class="section-header">
-        <h3>Get the Tool</h3>
-        <div class="underline"></div>
-      </div>
-      <div class="contact-content">
-        <p>Ready to streamline your audio analysis workflow? Download or learn more about MFCC Audio Processor!</p>
+      <div class="contact-box">
+        <h2>¿Preguntas o Comentarios?</h2>
+        <p>Contáctanos para más información sobre el MFCC Audio Processor</p>
         <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me how you plan to use MFCC..." required></textarea>
+            <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <button type="submit" class="btn-submit">Enviar</button>
         </form>
-        <div id="formStatus" aria-live="polite" class="form-status"></div>
-        <div class="social-links">
-          <p>Connect & Download:</p>
-          <div class="links">
-            <a href="https://github.com/walteropp" target="_blank" title="GitHub">GitHub</a>
-            <a href="https://github.com/walteropp/My-first-site-" target="_blank" title="Project Repo">Project Repo</a>
-            <a href="mailto:walter@example.com" title="Email">Email</a>
-          </div>
-        </div>
+        <div id="formStatus" class="form-status"></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 MFCC Audio Processor. Built with Python & deployed on GitHub Pages.</p>
+      <p>&copy; 2025 MFCC Audio Processor. Powered by Python, Librosa & GitHub Pages.</p>
     </div>
   </footer>
 
