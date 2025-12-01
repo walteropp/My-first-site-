@@ -1,0 +1,39 @@
+﻿/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'"Helvetica Neue"',Arial;line-height:1.5;color:#1b1b1b;background:#fafafa}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+
+/* Header */
+.site-header{background:#fff;border-bottom:1px solid #e6e6e6}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.site-title{font-size:1.125rem}
+.nav a{margin-left:1rem;color:#333;text-decoration:none}
+.nav a:hover{text-decoration:underline}
+
+/* Hero */
+.hero{padding:4rem 0;background:linear-gradient(180deg,#fff,#f7f7fc)}
+.hero h2{font-size:2rem;margin-bottom:.5rem}
+.btn{display:inline-block;margin-top:1rem;padding:.6rem 1rem;background:#2563eb;color:#fff;border-radius:6px;text-decoration:none}
+
+/* Features */
+.features .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:1rem}
+.features article{background:#fff;border:1px solid #eee;padding:1rem;border-radius:8px}
+
+.about,.contact{padding:2rem 0}
+
+/* Form */
+form{display:grid;gap:.5rem}
+input,textarea{padding:.6rem;border:1px solid #ddd;border-radius:6px}
+button{padding:.6rem 1rem;background:#111827;color:#fff;border:none;border-radius:6px}
+.form-status{margin-top:.5rem;color:#065f46}
+
+/* Footer */
+.site-footer{padding:1rem 0;text-align:center;color:#666;font-size:.9rem}
+
+/* Utilities */
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+@media (min-width:800px){
+  .hero h2{font-size:2.5rem}
+}
