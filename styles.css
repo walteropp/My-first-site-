@@ -140,7 +140,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  padding: 4rem 0;
+  padding: 3rem 0;
   text-align: center;
   color: var(--white);
 }
@@ -148,14 +148,14 @@ body {
 .hero-content {
   display: flex;
   justify-content: center;
+  padding: 1rem 0;
 }
 
-.hero-content img {
-  max-width: 400px;
+.hero-image {
+  max-width: 600px;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
 }
 
 /* About Section */
